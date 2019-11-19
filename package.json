@@ -1,0 +1,63 @@
+{
+  "name": "react-lazy-icons",
+  "version": "1.0.0-alpha.2",
+  "license": "MIT",
+  "author": "Etienne Dldc",
+  "main": "dist/index.js",
+  "module": "dist/react-lazy-icons.esm.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test --env=jsdom",
+    "lint": "tsdx lint",
+    "pub": "npx np"
+  },
+  "peerDependencies": {
+    "icons-bundler": "^1.0.0-alpha.1",
+    "react": ">=16"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.22",
+    "@types/react": "^16.9.11",
+    "@types/react-dom": "^16.9.4",
+    "husky": "^3.0.9",
+    "icons-bundler": "^1.0.0-alpha.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "tsdx": "^0.11.0",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "np": "^5.1.3"
+  },
+  "description": "",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etienne-dldc/react-lazy-icons.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/etienne-dldc/react-lazy-icons/issues"
+  },
+  "homepage": "https://github.com/etienne-dldc/react-lazy-icons#readme"
+}

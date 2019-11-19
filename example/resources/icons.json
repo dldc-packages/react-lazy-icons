@@ -1,0 +1,10 @@
+{
+  "chevron-down": { "path": "icons/chevron-down.svg" },
+  "chevron-left": { "path": "icons/chevron-left.svg" },
+  "chevron-right": { "path": "icons/chevron-right.svg" },
+  "chevron-up": { "path": "icons/chevron-up.svg" },
+  "clock": { "path": "icons/clock.svg" },
+  "home": { "path": "icons/home.svg" },
+  "menu": { "path": "icons/menu.svg" },
+  "refresh-cw": { "path": "icons/refresh-cw.svg" }
+}
