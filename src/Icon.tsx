@@ -5,7 +5,7 @@ import { IconsPaths } from 'icons-bundler';
 export const IconsContext = React.createContext<IconsPaths | null>(null);
 
 interface IconProps<I extends IconsPaths> {
-  icon: keyof I;
+  icon?: keyof I;
   color?: string;
   strokeWidth?: number | string;
   iconSize?: number;
@@ -37,7 +37,7 @@ export function createIconComponents<I extends IconsPaths>() {
     strokeWidth = '2',
   }) => {
     const iconsPaths: I = React.useContext(IconsContext) as any;
-    const parts = iconsPaths && iconsPaths[icon];
+    const parts = iconsPaths && icon && iconsPaths[icon];
     const elems = parts
       ? parts.map((d, i) => {
           if (typeof d === 'string') {
